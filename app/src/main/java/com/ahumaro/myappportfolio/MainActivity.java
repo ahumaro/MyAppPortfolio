@@ -1,6 +1,7 @@
 package com.ahumaro.myappportfolio;
 
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -18,44 +19,52 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        final Toast toast = Toast.makeText(this, "", Toast.LENGTH_SHORT);
+
         ((Button) findViewById(R.id.btn_spotify)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, getResources().getString(R.string.toast_spotify), Toast.LENGTH_SHORT).show();
+                toast.setText(getResources().getString(R.string.toast_spotify));
+                toast.show();
             }
         });
 
         ((Button) findViewById(R.id.btn_scores)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, getResources().getString(R.string.toast_scores), Toast.LENGTH_SHORT).show();
+                toast.setText(getResources().getString(R.string.toast_scores));
+                toast.show();
             }
         });
         ((Button) findViewById(R.id.btn_library)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, getResources().getString(R.string.toast_library), Toast.LENGTH_SHORT).show();
+                toast.setText(getResources().getString(R.string.toast_library));
+                toast.show();
             }
         });
 
         ((Button) findViewById(R.id.btn_bigger)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, getResources().getString(R.string.toast_bigger), Toast.LENGTH_SHORT).show();
+                toast.setText(getResources().getString(R.string.toast_bigger));
+                toast.show();
             }
         });
 
         ((Button) findViewById(R.id.btn_xyz)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, getResources().getString(R.string.toast_xyz), Toast.LENGTH_SHORT).show();
+                toast.setText(getResources().getString(R.string.toast_xyz));
+                toast.show();
             }
         });
 
         ((Button) findViewById(R.id.btn_capstone)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, getResources().getString(R.string.toast_capstone), Toast.LENGTH_SHORT).show();
+                toast.setText(getResources().getString(R.string.toast_capstone));
+                toast.show();
             }
         });
 
@@ -76,8 +85,8 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.action_about) {
+            Snackbar.make(findViewById(R.id.coordinatorLayout), "by Ahumaro Mendoza <ahumaro@ahumaro.com>", Snackbar.LENGTH_LONG).show();
         }
 
         return super.onOptionsItemSelected(item);

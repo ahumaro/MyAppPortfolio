@@ -5,4 +5,12 @@
     <color name="colorAccent">#8c9eff</color>
     <color name="primary_text_material_light">#232323</color>
     <color name="background_material_light">#ffffff</color>
+
+    <color name="main_bg">#232323</color>
+    <color name="content_bg">#e0eaf1</color>
+
+    <color name="btn_bg_color_light">#f08C35</color>
+    <color name="btn_bg_color_dark">#c60240</color>
+    <color name="btn_fg_color_light">#000000</color>
+    <color name="btn_fg_color_dark">#ffffff</color>
 </resources>

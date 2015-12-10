@@ -12,82 +12,87 @@
     tools:context="com.ahumaro.myappportfolio.MainActivity"
     tools:showIn="@layout/activity_main"
     android:orientation="vertical"
-    android:background="#e0eaf1">
+    android:background="@color/content_bg">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/main_title"
-        android:id="@+id/textView"
+        android:text="@string/lbl_title"
+        android:id="@+id/lbl_title"
         android:layout_gravity="center_horizontal"
-        android:textSize="24dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="30dp" />
+        android:textSize="@dimen/lbl_title_textSize"
+        android:layout_marginTop="@dimen/lbl_title_marginTop"
+        android:layout_marginBottom="@dimen/lbl_title_marginBottom" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_spotify"
         android:id="@+id/btn_spotify"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:backgroundTint="#f08C35" />
+        android:layout_marginLeft="@dimen/btn_margin_horizontal"
+        android:layout_marginRight="@dimen/btn_margin_horizontal"
+        android:paddingTop="@dimen/btn_padding_vertical"
+        android:paddingBottom="@dimen/btn_padding_vertical"
+        android:backgroundTint="@color/btn_bg_color_light"
+        android:textColor="@color/btn_fg_color_light" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_scores"
         android:id="@+id/btn_scores"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:backgroundTint="#f08C35" />
+        android:layout_marginLeft="@dimen/btn_margin_horizontal"
+        android:layout_marginRight="@dimen/btn_margin_horizontal"
+        android:paddingTop="@dimen/btn_padding_vertical"
+        android:paddingBottom="@dimen/btn_padding_vertical"
+        android:backgroundTint="@color/btn_bg_color_light"
+        android:textColor="@color/btn_fg_color_light" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_library"
         android:id="@+id/btn_library"
-        android:layout_marginRight="70dp"
-        android:layout_marginLeft="70dp"
-        android:paddingBottom="20dp"
-        android:paddingTop="20dp"
-        android:backgroundTint="#f08C35" />
+        android:layout_marginRight="@dimen/btn_margin_horizontal"
+        android:layout_marginLeft="@dimen/btn_margin_horizontal"
+        android:paddingBottom="@dimen/btn_padding_vertical"
+        android:paddingTop="@dimen/btn_padding_vertical"
+        android:backgroundTint="@color/btn_bg_color_light"
+        android:textColor="@color/btn_fg_color_light" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_bigger"
         android:id="@+id/btn_bigger"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:backgroundTint="#f08C35" />
+        android:layout_marginLeft="@dimen/btn_margin_horizontal"
+        android:layout_marginRight="@dimen/btn_margin_horizontal"
+        android:paddingTop="@dimen/btn_padding_vertical"
+        android:paddingBottom="@dimen/btn_padding_vertical"
+        android:backgroundTint="@color/btn_bg_color_light"
+        android:textColor="@color/btn_fg_color_light" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_xyz"
         android:id="@+id/btn_xyz"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
-        android:paddingBottom="20dp"
-        android:paddingTop="20dp"
-        android:backgroundTint="#f08C35" />
+        android:layout_marginLeft="@dimen/btn_margin_horizontal"
+        android:layout_marginRight="@dimen/btn_margin_horizontal"
+        android:paddingBottom="@dimen/btn_padding_vertical"
+        android:paddingTop="@dimen/btn_padding_vertical"
+        android:backgroundTint="@color/btn_bg_color_light"
+        android:textColor="@color/btn_fg_color_light" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_capstone"
         android:id="@+id/btn_capstone"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:backgroundTint="#c60240"
-        android:textColor="#ffffff" />
+        android:layout_marginLeft="@dimen/btn_margin_horizontal"
+        android:layout_marginRight="@dimen/btn_margin_horizontal"
+        android:paddingTop="@dimen/btn_padding_vertical"
+        android:paddingBottom="@dimen/btn_padding_vertical"
+        android:backgroundTint="@color/btn_bg_color_dark"
+        android:textColor="@color/btn_fg_color_dark" />
 </LinearLayout>
